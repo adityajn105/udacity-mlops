@@ -69,7 +69,7 @@ async def inference(user_data: User):
             "education": [user_data.education],
             "marital-status": [user_data.marital_status],
             "occupation": [user_data.occupation],
-            "relationship": [user_data.occupation],
+            "relationship": [user_data.relationship],
             "race": [user_data.race],
             "sex": [user_data.sex],
             "hours-per-week": [user_data.hours_per_week],

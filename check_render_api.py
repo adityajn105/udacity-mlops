@@ -6,15 +6,15 @@ import requests
 
 data = {
     "age": 40,
-    "workclass": "Private",
-    "education": "Doctorate",
-    "marital_status": "Never-married",
+    "workclass": "Self-emp-inc",
+    "education": "Masters",
+    "marital_status": "Married-AF-spouse",
     "occupation": "Exec-managerial",
-    "relationship": "Not-in-family",
+    "relationship": "Husband",
     "race": "White",
     "sex": "Male",
     "hours_per_week": 40,
-    "native_country": "United-States",
+    "native_country": "England",
     }
 r = requests.post('https://salary-predictor-j8e5.onrender.com/', json=data)
 

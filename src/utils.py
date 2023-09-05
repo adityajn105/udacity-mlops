@@ -78,7 +78,7 @@ def train_model(X_train, y_train):
     """
     Trains a Random Forest model and return it
     """
-    model = RandomForestClassifier(n_estimators=100)
+    model = RandomForestClassifier(n_estimators=50)
     model.fit(X_train, y_train)
     cv = KFold(n_splits=10, shuffle=True, random_state=1)
     scores = cross_val_score(

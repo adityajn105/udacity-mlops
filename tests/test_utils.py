@@ -48,15 +48,15 @@ def test_inference_greater():
     sample = pd.DataFrame(
         {
             "age": [40],
-            "workclass": ["Private"],
-            "education": ["Doctorate"],
-            "marital-status": ["Never-married"],
+            "workclass": ["Self-emp-inc"],
+            "education": ["Masters"],
+            "marital-status": ["Married-AF-spouse"],
             "occupation": ["Exec-managerial"],
-            "relationship": ["Not-in-family"],
+            "relationship": ["Husband"],
             "race": ["White"],
             "sex": ["Male"],
             "hours-per-week": [40],
-            "native-country": ["United-States"],
+            "native-country": ["England"],
         }
     )
 
