@@ -1,0 +1,10 @@
+pandas
+numpy
+pytest
+requests
+uvicorn
+flake8
+pandas-profiling
+scikit-learn
+fastapi
+
