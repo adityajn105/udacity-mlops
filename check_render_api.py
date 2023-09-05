@@ -1,5 +1,5 @@
 """
-Heroku Api test script
+Render Api test script
 """
 import requests
 
