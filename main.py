@@ -1,7 +1,7 @@
 # Put the code for your API here.
 
 from fastapi import FastAPI
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Literal
 import src.utils as utils
 import pandas as pd
@@ -9,7 +9,7 @@ from joblib import load
 
 
 class User(BaseModel):
-    age: int
+    age: int = Field(examples=[30,40,65])
     workclass: Literal[
         'State-gov', 'Self-emp-not-inc', 'Private', 'Federal-gov',
         'Local-gov', 'Self-emp-inc', 'Without-pay']
@@ -35,7 +35,7 @@ class User(BaseModel):
         'White', 'Black', 'Asian-Pac-Islander', 'Amer-Indian-Eskimo',
         'Other']
     sex: Literal['Male', 'Female']
-    hours_per_week: int
+    hours_per_week: int = Field(examples=[40, 56])
     native_country: Literal[
         'United-States', 'Cuba', 'Jamaica', 'India', 'Mexico',
         'Puerto-Rico', 'Honduras', 'England', 'Canada', 'Germany', 'Iran',

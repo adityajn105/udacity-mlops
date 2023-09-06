@@ -4,6 +4,8 @@
 
 Udacity MLOPS nanodegree project to train a model on census data and publish it via API on Render
 
+Github Link for Project: [https://github.com/adityajn105/udacity-mlops/](https://github.com/adityajn105/udacity-mlops)
+
 ## Developer Environment
 1. Have python3.8 installed.
 2. Firstly install all requirements: `pip install -r requirements.txt`
